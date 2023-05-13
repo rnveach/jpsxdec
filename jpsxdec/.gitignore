@@ -1,1 +1,14 @@
+# compile files
+
+.settings/
 _ant/
+bin/
+.classpath
+.project
+
+# execution files
+
+debug00.log
+debug00.log.lck
+index.log
+jpsxdec.ini
