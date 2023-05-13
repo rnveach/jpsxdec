@@ -506,8 +506,8 @@ public class WindowsDirectoryChooserUI extends BasicFileChooserUI implements
 
   @SuppressWarnings("unchecked")
   private void enqueueChildren(FileTreeNode node) {
-    for (Enumeration<FileTreeNode> e = node.children(); e.hasMoreElements();) {
-      addToQueue(e.nextElement(), tree);
+    for (FileTreeNode e : node.getChildren()) {
+      addToQueue(e, tree);
     }
   }
 
